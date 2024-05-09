@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator in javascript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <di class="container">
+      <div id="calculator">
+        <input type="text" id="display" readonly />
+
+        <div class="button-container">
+
+          <!-- here i started the clear button functionality -->
+          <button class="calculator-buttons" id="c_button"onclick="currentValue = ''; document.querySelector('#display').value = currentValue;">C</button>
+
+
+         <!-- here i started the one  button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'1'; document.querySelector('#display').value = currentValue;">1</button>
+
+        <!-- here i started the second button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'2'; document.querySelector('#display').value = currentValue;">2</button>
+
+         <!-- here i started the addition button functionality -->
+          <button class="calculator-buttons" id="calculation-button" onclick="currentValue = currentValue +'+'; document.querySelector('#display').value = currentValue;">+</button>
+
+          <!-- here i started the three button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'3'; document.querySelector('#display').value = currentValue;">3</button>
+
+          <!-- here i started the four button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'4'; document.querySelector('#display').value = currentValue;">4</button>
+
+         <!-- here i started the fifth button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'5'; document.querySelector('#display').value = currentValue;">5</button>
+
+         <!-- here i started the subtraction button functionality -->
+          <button class="calculator-buttons" id="calculation-button"onclick="currentValue = currentValue +'-'; document.querySelector('#display').value = currentValue;">-</button>
+
+          <!-- here i started the six button functionality -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'6'; document.querySelector('#display').value = currentValue;">6</button>
+
+          <!-- here i started the seven button functionality -->
+
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'7'; document.querySelector('#display').value = currentValue;">7</button>
+
+          <!-- here i started the eight button functionality -->
+          <button class="calculator-buttons"onclick="currentValue = currentValue +'8'; document.querySelector('#display').value = currentValue;">8</button>
+          
+
+          <!-- here i started the multiplication button functionality -->
+          <button class="calculator-buttons" id="calculation-button"onclick="currentValue = currentValue +'*'; document.querySelector('#display').value = currentValue;">x</button>
+
+
+          <!-- here i started the nine button functionality  -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'9';document.querySelector('#display').value = currentValue ;">9</button>
+
+
+          <!-- here i started the zero button functionality -->
+          <button class="calculator-buttons" onclick="currentValue = currentValue +'0';document.querySelector('#display').value = currentValue ;">0</button>
+
+
+         <!-- here i started the equal button functionality -->
+          <button class="calculator-buttons" id="calculation-button"  onclick="
+          currentValue = eval(currentValue); document.querySelector('#display').value = currentValue;">=</button>
+
+
+          <!-- here i started the divide button functionality -->
+          <button class="calculator-buttons" id="calculation-button"onclick="currentValue = currentValue +'/'; document.querySelector('#display').value = currentValue;">/</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
